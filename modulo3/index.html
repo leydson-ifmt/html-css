@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt_br, en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -57,6 +57,26 @@
             background-color: whitesmoke;
             box-sizing: border-box;
         }
+
+    y>
+ul {
+    list-style: none;
+    padding: 0;
+}
+li {
+    background-color: lightgray;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+li:hover {
+    background-color: lightblue; /* Muda a cor de fundo ao passar o mouse */
+}
+li:nth-child(odd) {
+    color: red; /* Cor vermelha para itens ímpares */
+}
+li:last-child {
+    font-weight: bold; /* Negrito para o último item */
+}
     </style>
 
 <body>
@@ -96,5 +116,12 @@
     <script src="teste.js" defer></script>
 </div>
 <p id="resultado-idade">Aguardando sua idade...</p>
-</body>
+</bod>
+<ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+</ul>
+
 </html>
