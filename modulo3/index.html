@@ -18,6 +18,11 @@
             color: #333;
             text-align: justify;
         }
+        p {
+        font-size: 1.2em;
+        color: chocolate;
+        font-family: :Verdana, Geneva, Tahoma, sans-serif;
+        }
 
         .container {
             background-color: white;
@@ -40,16 +45,56 @@
             /* Você pode adicionar outras propriedades aqui, como: */
             /* text-decoration: underline; */
             /* transform: scale(1.05); */
+
+            
+        }
+        .box{
+            width: 200px;
+            height: 150px;
+            padding: 10px;
+            border: 2px solid blue;
+            margin: 20px;
+            background-color: whitesmoke;
+            box-sizing: border-box;
         }
     </style>
+
 <body>
-    <h1>Elementos de Texto</h1>
-    <h2>Heading Tags</h2>
-    <p>É sempre bom lembrar de usar <SPAN  class="destaque-hover">Apenas uma tag h1 por páginas</SPAN></p>
+    
+    <h1 class="destaque-hover">H1 - Elementos de Texto</h1>
+    <h2>H2 - Heading Tags</h2>
+    <p>P --> É sempre bom lembrar de usar <SPAN  class="destaque-hover">Apenas uma tag h1 por páginas</SPAN></p>
     <h3>H3 - É sempre bom lembrar de usar apenas uma tag h1 por páginas</h3>
     <h4>H4 - É sempre bom lembrar de usar apenas uma tag h1 por páginas</h4>
     <h5>H5 - É sempre bom lembrar de usar apenas uma tag h1 por páginas</h5>
     <h6>H6 - É sempre bom lembrar de usar apenas uma tag h1 por páginas</h6>
+    <p></p>
+
+   <table>
+<tr>
+<th>Nome</th>
+<th>Idade</th>
+<th>Cidade</th>
+</tr>
+<tr>
+<td>João</td>
+<td>30</td>
+<td>São Paulo</td>
+</tr>
+<tr>
+<td>Maria</td>
+<td>25</td>
+<td>Rio de Janeiro</td>
+</tr>
+</table>
+<div class="box" style="text-align: center;"
+><p>conteúdo dentro da caixa</p></div>
+
+<div class="box" style="text-align: center; align-items: center; display: flex;">Conteúdo dentro da caixa
     
+</div>
+    <script src="teste.js" defer></script>
+</div>
+<p id="resultado-idade">Aguardando sua idade...</p>
 </body>
 </html>
