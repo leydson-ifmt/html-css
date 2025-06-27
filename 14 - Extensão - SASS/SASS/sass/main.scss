@@ -1,5 +1,9 @@
+@use "sass:color";
+
+// Your variable definition
+
 $azul: #004fd6;
-$azul-escuro: darken($azul, 10%);
+$azul-escuro: color.adjust($azul, $lightness: -10%);
 $cinza: #303030;
 
 @function multiplicar($a, $b) {
@@ -60,7 +64,7 @@ $cinza: #303030;
 
 @for $i from 1 through 15 {
   li:nth-child(#{$i}) {
-    background-color: darken($azul, ($i - 1) * 3%);
+    background-color: color.adjust($azul, $lightness: -($i - 1) * 3%);
   }
 }
 
@@ -125,7 +129,7 @@ body {
   &__h1 {
     @include textos(3.32rem, 700, 1);
     text-align: center;
-    color: darken($cinza, 10%);
+    color: color.adjust($cinza, $lightness: -10%);
 
     &:hover {
       color: $azul-escuro;
@@ -167,8 +171,8 @@ body {
 
 %botao {
   align-self: center;
-  color: lighten($azul, 50%);
-  font-weight: 600;
+  color: color.adjust($azul, $lightness:50%);
+    font-weight: 600;
   background-color: $cinza;
   border-radius: 50rem;
   padding: 1.02rem 2.5rem;
@@ -178,7 +182,7 @@ body {
 
 %botao--hover {
   color: $azul;
-  background-color: lighten($cinza, 75%);
+  background-color: color.adjust($cinza, $lightness: 75%);
 }
 
 // @media (max-width: 30em) {
