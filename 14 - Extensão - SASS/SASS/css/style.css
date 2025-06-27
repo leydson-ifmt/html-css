@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.2;
+}
+
+.secao {
+  display: flex;
+  flex-flow: row;
+  align-items: stretch;
+  justify-content: center;
+  gap: 0;
+  padding: 3.9rem;
+  background-image: url(https://www.hashtagtreinamentos.com/wp-content/uploads/2022/06/BACKGROUN-banner-01.png);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.caixa {
+  display: flex;
+  flex-flow: column;
+  align-items: stretch;
+  justify-content: center;
+  gap: 2.5rem;
+  max-width: 56rem;
+  padding: 2rem;
+  border-radius: 2rem;
+  box-shadow: 0 0 1rem rgba(48, 48, 48, 0.15);
+  backdrop-filter: blur(20px);
+  background-color: rgba(255, 255, 255, 0.26);
+}
+.caixa__h1 {
+  font-size: 3.32rem;
+  line-height: 1;
+  font-weight: 700;
+  text-align: center;
+  color: #171717;
+}
+.caixa__h1:hover {
+  color: #003ca3;
+}
+@media (max-width: 35em) {
+  .caixa__h1 {
+    font-size: 2.76rem;
+  }
+}
+.caixa__h2 {
+  font-size: 2.76rem;
+  line-height: 1.1;
+  font-weight: 600;
+  color: #003ca3;
+}
+@media (max-width: 30em) {
+  .caixa__h2 {
+    font-size: 2.3rem;
+  }
+}
+.caixa__texto {
+  color: #303030;
+}
+.caixa__texto--colorido {
+  color: #004fd6;
+}
+.caixa__link:link, .caixa__link:visited, .caixa__link {
+  align-self: center;
+  color: #d6e5ff;
+  font-weight: 600;
+  background-color: #303030;
+  border-radius: 50rem;
+  padding: 1.02rem 2.5rem;
+  text-decoration: none;
+  transition: all ease-in 100ms;
+}
+
+.caixa__link:hover, .caixa__link:active {
+  color: #004fd6;
+  background-color: #efefef;
+}
+
+/*# sourceMappingURL=style.css.map */

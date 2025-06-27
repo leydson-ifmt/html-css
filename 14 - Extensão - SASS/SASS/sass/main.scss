@@ -1,0 +1,192 @@
+$azul: #004fd6;
+$azul-escuro: darken($azul, 10%);
+$cinza: #303030;
+
+@function multiplicar($a, $b) {
+  @return $a * $b;
+}
+
+@function dividir($a, $b) {
+  @return $a / $b;
+}
+
+@mixin flex($flow: row, $align: stretch, $justify: start, $gap: 0) {
+  display: flex;
+  flex-flow: $flow;
+  align-items: $align;
+  justify-content: $justify;
+  gap: $gap;
+}
+
+@mixin textos($tamanho, $peso, $altura) {
+  font-size: $tamanho;
+  line-height: $altura;
+  font-weight: $peso;
+}
+
+@mixin respond-small {
+  @media (max-width: 30em) {
+    @content;
+  }
+}
+
+@mixin respond-medium {
+  @media (max-width: 35em) {
+    @content;
+  }
+}
+
+@mixin respond-big {
+  @media (max-width: 40em) {
+    @content;
+  }
+}
+
+@mixin respond($tamanho) {
+  @if $tamanho == small {
+    @media (max-width: 30em) {
+      @content;
+    }
+  } @else if $tamanho == medium {
+    @media (max-width: 35em) {
+      @content;
+    }
+  } @else if $tamanho == big {
+    @media (max-width: 40em) {
+      @content;
+    }
+  }
+}
+
+@for $i from 1 through 15 {
+  li:nth-child(#{$i}) {
+    background-color: darken($azul, ($i - 1) * 3%);
+  }
+}
+
+ul {
+  display: grid;
+  gap: 5px;
+  list-style: none;
+}
+
+li {
+  padding: 10px;
+  border: 1px solid $azul;
+
+  // &:nth-child(1) {
+  //   background-color: darken($azul, 0);
+  // }
+  // &:nth-child(2) {
+  //   background-color: darken($azul, 5%);
+  // }
+  // &:nth-child(3) {
+  //   background-color: darken($azul, 10%);
+  // }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.2;
+}
+
+.secao {
+  @include flex($justify: center);
+  padding: 3.9rem;
+
+  background-image: url(https://www.hashtagtreinamentos.com/wp-content/uploads/2022/06/BACKGROUN-banner-01.png);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.caixa {
+  @include flex($flow: column, $justify: center, $gap: 2.5rem);
+  max-width: 56rem;
+  // padding: 2 * 1 * 1rem;
+  padding: 2rem;
+  // border-radius: (4 / 2) * 1rem;
+  border-radius: 2rem;
+  box-shadow: 0 0 1rem rgba($cinza, 0.15);
+  backdrop-filter: blur(20px);
+  background-color: rgba(255, 255, 255, 0.26);
+
+  &__h1 {
+    @include textos(3.32rem, 700, 1);
+    text-align: center;
+    color: darken($cinza, 10%);
+
+    &:hover {
+      color: $azul-escuro;
+    }
+
+    @include respond(medium) {
+      font-size: 2.76rem;
+    }
+  }
+
+  &__h2 {
+    @include textos(2.76rem, 600, 1.1);
+    color: $azul-escuro;
+
+    @include respond(small) {
+      font-size: 2.3rem;
+    }
+  }
+
+  &__texto {
+    color: $cinza;
+
+    &--colorido {
+      color: $azul;
+    }
+  }
+
+  &__link:link,
+  &__link:visited,
+  &__link {
+    @extend %botao;
+  }
+
+  &__link:hover,
+  &__link:active {
+    @extend %botao--hover;
+  }
+}
+
+%botao {
+  align-self: center;
+  color: lighten($azul, 50%);
+  font-weight: 600;
+  background-color: $cinza;
+  border-radius: 50rem;
+  padding: 1.02rem 2.5rem;
+  text-decoration: none;
+  transition: all ease-in 100ms;
+}
+
+%botao--hover {
+  color: $azul;
+  background-color: lighten($cinza, 75%);
+}
+
+// @media (max-width: 30em) {
+//   .caixa__h1 {
+//     font-size: 2.76rem;
+//   }
+
+//   .caixa__h2 {
+//     font-size: 2.3rem;
+//   }
+// }

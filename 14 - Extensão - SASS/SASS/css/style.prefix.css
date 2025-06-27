@@ -1,0 +1,92 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.2;
+}
+
+.secao {
+  display: flex;
+  flex-flow: row;
+  align-items: stretch;
+  justify-content: center;
+  gap: 0;
+  padding: 3.9rem;
+  background-image: url(https://www.hashtagtreinamentos.com/wp-content/uploads/2022/06/BACKGROUN-banner-01.png);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.caixa {
+  display: flex;
+  flex-flow: column;
+  align-items: stretch;
+  justify-content: center;
+  gap: 2.5rem;
+  max-width: 56rem;
+  padding: 2rem;
+  border-radius: 2rem;
+  box-shadow: 0 0 1rem rgba(48, 48, 48, 0.15);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  background-color: rgba(255, 255, 255, 0.26);
+}
+.caixa__h1 {
+  font-size: 3.32rem;
+  line-height: 1;
+  font-weight: 700;
+  text-align: center;
+  color: #171717;
+}
+.caixa__h1:hover {
+  color: #003ca3;
+}
+@media (max-width: 35em) {
+  .caixa__h1 {
+    font-size: 2.76rem;
+  }
+}
+.caixa__h2 {
+  font-size: 2.76rem;
+  line-height: 1.1;
+  font-weight: 600;
+  color: #003ca3;
+}
+@media (max-width: 30em) {
+  .caixa__h2 {
+    font-size: 2.3rem;
+  }
+}
+.caixa__texto {
+  color: #303030;
+}
+.caixa__texto--colorido {
+  color: #004fd6;
+}
+.caixa__link:link, .caixa__link:visited, .caixa__link {
+  align-self: center;
+  color: #d6e5ff;
+  font-weight: 600;
+  background-color: #303030;
+  border-radius: 50rem;
+  padding: 1.02rem 2.5rem;
+  text-decoration: none;
+  transition: all ease-in 100ms;
+}
+
+.caixa__link:hover, .caixa__link:active {
+  color: #004fd6;
+  background-color: #efefef;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3MvbWFpbi5zY3NzIiwic3R5bGUuY29tcC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBNERBO0VBQ0UsVUFBQTtFQUNBLFNBQUE7RUFDQSxzQkFBQTtBQzNERjs7QUQ4REE7RUFDRSxnQkFBQTtBQzNERjs7QUQ4REE7RUFDRSxxQ0FBQTtFQUNBLGlCQUFBO0VBQ0EsZ0JBQUE7QUMzREY7O0FEOERBO0VBL0RFLGFBQUE7RUFDQSxjQUZpQjtFQUdqQixvQkFIOEI7RUFJOUIsdUJBNkR3QjtFQTVEeEIsTUFMOEQ7RUFrRTlELGVBQUE7RUFFQSw2R0FBQTtFQUNBLHdCQUFBO0VBQ0EsNEJBQUE7RUFDQSxzQkFBQTtBQ3hERjs7QUQyREE7RUF6RUUsYUFBQTtFQUNBLGlCQXlFcUI7RUF4RXJCLG9CQUg4QjtFQUk5Qix1QkF1RXVDO0VBdEV2QyxXQXNFcUQ7RUFDckQsZ0JBQUE7RUFFQSxhQUFBO0VBRUEsbUJBQUE7RUFDQSwyQ0FBQTtFQUNBLG1DQUFBO1VBQUEsMkJBQUE7RUFDQSwyQ0FBQTtBQ3RERjtBRHdERTtFQTVFQSxrQkE2RWtCO0VBNUVsQixjQTRFZ0M7RUEzRWhDLGdCQTJFMkI7RUFDekIsa0JBQUE7RUFDQSxjQUFBO0FDcERKO0FEc0RJO0VBQ0UsY0F0R1E7QUNrRGQ7QURESTtFQStDRjtJQVVJLGtCQUFBO0VDcERKO0FBQ0Y7QUR1REU7RUExRkEsa0JBMkZrQjtFQTFGbEIsZ0JBMEZnQztFQXpGaEMsZ0JBeUYyQjtFQUN6QixjQWhIVTtBQzZEZDtBRGhCSTtFQWlFRjtJQUtJLGlCQUFBO0VDbERKO0FBQ0Y7QURxREU7RUFDRSxjQXZISTtBQ29FUjtBRHFESTtFQUNFLGNBNUhDO0FDeUVQO0FEbUVBO0VBQ0Usa0JBQUE7RUFDQSxjQUFBO0VBQ0EsZ0JBQUE7RUFDQSx5QkE5SU07RUErSU4sb0JBQUE7RUFDQSx1QkFBQTtFQUNBLHFCQUFBO0VBQ0EsNkJBQUE7QUNqRUY7O0FEb0VBO0VBQ0UsY0F4Sks7RUF5SkwseUJBQUE7QUNqRUYiLCJmaWxlIjoic3R5bGUucHJlZml4LmNzcyJ9 */
